@@ -8,6 +8,16 @@ Il progetto nasce al solo scopo didattico, l'idea alla base era quella di svilup
 Questo progetto doveva servire anche a farmi esplorare il linguaggio python, all'epoca questa era
 uno delle mie prime applicazioni del linguaggio. 
 
+## Descrizione
+
+Il software genera due noise map, la prima viene utilizzata come identificativo delle altezza
+delle celle, mentre la seconda identifica il livello di idratazione. 
+
+La combinazione dei due valori identifica che tipo di terreno presente sulla cella. 
+
+La mappa dei terreni viene poi data in pasto ad una classe che associa ogni terreno ad un colore e crea
+un file di output.
+
 ## Parametri dell'applicativo
 
 Lo script può essere personalizzato tramite l'immissione di alcuni parametri.
@@ -18,12 +28,7 @@ Lo script può essere personalizzato tramite l'immissione di alcuni parametri.
 - **--noise**: Indica il tipo di rumore da applicare perlin o simplex
 - **--tile_size**: Fattore scala su ogni singola tile
 
-## Descrizione
-
-Il software genera due noise map, la prima viene utilizzata come identificativo delle altezza
-delle celle, mentre la seconda identifica il livello di idratazione. 
-
-La combinazione dei due valori identifica che tipo di terreno presente sulla cella. 
-
-La mappa dei terreni viene poi data in pasto ad una classe che associa ogni terreno ad un colore e crea
-un file di output.
+## Eseguire il comando 
+```
+python main.py --size 100 --seed 8 --octaves 
+```
