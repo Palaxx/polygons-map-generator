@@ -1,6 +1,6 @@
 from PIL import ImageDraw, Image
 import numpy as np
-
+import os
 class MapDrawer:
 
     def __init__(self, map, size: int):
@@ -19,6 +19,10 @@ class MapDrawer:
 
         for terrain_name, coords in terrains.items():
             drawer.point(coords, colors[terrain_name])
+
+        if not os.path.exists('outputs'):
+            os.mkdir('outputs')
+
         image.save("outputs/map.png")
 
     def __group_by_terrain(self):
