@@ -30,5 +30,5 @@ Lo script può essere personalizzato tramite l'immissione di alcuni parametri.
 
 ## Eseguire il comando 
 ```
-python main.py --size 100 --seed 8 --octaves 
+python main.py --size 100 --seed 8 --octaves 10
 ```
