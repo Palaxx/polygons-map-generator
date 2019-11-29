@@ -17,3 +17,13 @@ Lo script può essere personalizzato tramite l'immissione di alcuni parametri.
 - **--octaves**: Questo numero indica il numero di differenti frequenze di rumore applicate
 - **--noise**: Indica il tipo di rumore da applicare perlin o simplex
 - **--tile_size**: Fattore scala su ogni singola tile
+
+## Descrizione
+
+Il software genera due noise map, la prima viene utilizzata come identificativo delle altezza
+delle celle, mentre la seconda identifica il livello di idratazione. 
+
+La combinazione dei due valori identifica che tipo di terreno presente sulla cella. 
+
+La mappa dei terreni viene poi data in pasto ad una classe che associa ogni terreno ad un colore e crea
+un file di output.
